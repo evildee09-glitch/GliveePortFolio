@@ -411,27 +411,32 @@
         <h2 class="section-title">Send a Message</h2>
       </div>
 
-      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been simulated.');">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="John Doe" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" placeholder="john@example.com" required>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" placeholder="Job Opportunity / Inquiry" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
-      </form>
+      <form class="contact-form" id="contactForm">
+  <!-- Honeypot (spam trap, keep hidden) -->
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="john@example.com" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Inquiry" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+  </div>
+  <button type="submit" id="sendBtn" class="btn btn-primary btn-block">
+    <i class="fa-solid fa-paper-plane"></i> Send Message
+  </button>
+</form>
     </div>
   </section>
 
@@ -439,7 +444,20 @@
   <footer class="footer">
     <div class="container footer-content">
       <p>&copy; 2026 Glivee D. Macasarte. All rights reserved.</p>
-      <p class="footer-sub">Designed for Professional Hospitality Recruitment.</p>
+      
+      <!-- POWERED BY BRANDING WITH LOGO -->
+      <div class="powered-by">
+        <span class="powered-text">Powered by</span>
+        <div class="brand-logo-wrapper">
+          <!-- Replace logo.png with your actual logo image file -->
+          <img src="logo.png" alt="Design to Deploy Logo" class="brand-logo" onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='inline-flex';">
+          <div id="logoFallback" class="logo-fallback" style="display: none;">
+            <i class="fa-solid fa-rocket logo-icon"></i>
+            <span class="brand-name">DESIGN TO DEPLOY</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </footer>
 
@@ -487,6 +505,33 @@
     document.getElementById('mobileToggle').addEventListener('click', () => {
       document.getElementById('navMenu').classList.toggle('active');
     });
+
+    <form class="contact-form" id="contactForm">
+  <!-- Honeypot (spam trap, keep hidden) -->
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="john@example.com" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Inquiry" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+  </div>
+  <button type="submit" id="sendBtn" class="btn btn-primary btn-block">
+    <i class="fa-solid fa-paper-plane"></i> Send Message
+  </button>
+</form>
   </script>
 </body>
 </html>
