@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glivee D. Macasarte | Hospitality & Reservations Professional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-text">G. MACASARTE</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills & PMS</a></li>
+        <li><a href="#education" class="nav-link">Education & Training</a></li>
+        <li><a href="#references" class="nav-link">References</a></li>
+        <li><a href="#contact" class="nav-link btn-nav">Contact Me</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      
+      <!-- Profile Picture Container -->
+      <div class="avatar-column">
+        <div class="avatar-wrapper" id="avatarWrapper">
+          <div class="avatar-frame">
+            <img src="" alt="Glivee D. Macasarte" id="profileImage" class="profile-img hidden">
+            <div class="avatar-placeholder" id="avatarPlaceholder">
+              <i class="fa-regular fa-user avatar-icon"></i>
+              <span class="placeholder-text">GM</span>
+            </div>
+          </div>
+          <div class="avatar-badge" onclick="document.getElementById('imageUpload').click()" title="Click to upload photo">
+            <i class="fa-solid fa-camera"></i>
+          </div>
+          <input type="file" id="imageUpload" accept="image/*" class="hidden-input" onchange="previewImage(event)">
+        </div>
+        <p class="avatar-subtext">Click camera icon to upload photo</p>
+      </div>
+
+      <!-- Main Info & Bio -->
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="pulse-dot"></span> Available for New Opportunities
+        </div>
+        <h1 class="hero-title">GLIVEE D. MACASARTE</h1>
+        <h2 class="hero-subtitle">Hospitality & Reservation Specialist</h2>
+        <p class="hero-bio">
+          Results-oriented Hospitality & Reservations Specialist with extensive hands-on experience across premier boutique hotels, luxury resorts, and high-volume casino VIP clubs. Proficient in leading Property Management Systems (Comanche, Klouds, Hotelogix) and channel managers to drive revenue and maximize guest satisfaction.
+        </p>
+
+        <!-- Quick Contacts Bar -->
+        <div class="contact-pills">
+          <button class="pill" onclick="copyToClipboard('09660596319', 'Phone number copied!')">
+            <i class="fa-solid fa-phone"></i> 09660596319 / 09190853712
+          </button>
+          <button class="pill" onclick="copyToClipboard('macasarteqlive01@gmail.com', 'Email copied!')">
+            <i class="fa-solid fa-envelope"></i> macasarteqlive01@gmail.com
+          </button>
+          <div class="pill no-click">
+            <i class="fa-solid fa-location-dot"></i> Caticlan, Malay, Aklan, Philippines
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+          <button class="btn btn-secondary" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Portfolio</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUICK METRICS / HIGHLIGHTS -->
+  <section class="highlights-bar">
+    <div class="container grid-4">
+      <div class="metric-card">
+        <span class="metric-num">8+</span>
+        <span class="metric-label">Years Hospitality Exp.</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-num">7+</span>
+        <span class="metric-label">PMS Platforms Mastered</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-num">100%</span>
+        <span class="metric-label">Guest Satisfaction Focus</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-num">Aklan</span>
+        <span class="metric-label">Boracay / Caticlan Based</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & OBJECTIVE -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Overview</span>
+        <h2 class="section-title">Career Objective</h2>
+      </div>
+      <div class="about-box">
+        <p class="about-text">
+          "To obtain a position in a reputable hospitality institution where I can apply my operational skills, reservation management expertise, and multi-PMS knowledge to drive revenue, streamline room inventory, and elevate guest experiences while continually growing as a hotel industry leader."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK EXPERIENCE -->
+  <section class="section bg-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career History</span>
+        <h2 class="section-title">Professional Work Experience</h2>
+      </div>
+
+      <div class="timeline">
+        
+        <!-- Experience 1 (Latest) -->
+        <div class="timeline-item featured">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Reservation Associate</h3>
+                <h4 class="company-name">Alta Leisure Inc.</h4>
+              </div>
+              <span class="date-badge current">Jan 13, 2026 – Jul 15, 2026</span>
+            </div>
+            <p class="role-desc">
+              Managed individual and group booking reservations, verified room inventory availability, coordinated with sales and front desk teams, and ensured seamless guest check-in workflows.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Reservation Associate</h3>
+                <h4 class="company-name">Araw Hospitality Group Inc.</h4>
+                <p class="company-loc">Salcedo Village, Makati City</p>
+              </div>
+              <span class="date-badge">Jun 2023 – Oct 2025</span>
+            </div>
+            <p class="role-desc">
+              Handled multi-property reservation requests, processed direct and OTA bookings, resolved booking discrepancies, and maintained guest profiles with high accuracy across system databases.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Front Office Associate / Reservations</h3>
+                <h4 class="company-name">UNWND Boutique Hotel</h4>
+                <p class="company-loc">Caticlan, Malay, Aklan</p>
+              </div>
+              <span class="date-badge">Feb 2022 – Jun 2023</span>
+            </div>
+            <p class="role-desc">
+              Welcomed boutique hotel guests, managed on-site front office operations, operated channel management systems, and delivered personalized customer service to ensure five-star reviews.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience 4 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Card Dealer & Roller</h3>
+                <h4 class="company-name">Oriental Group Casino – VIP Club Boracay</h4>
+                <p class="company-loc">Mövenpick Resort, Punta Bunga Cove, Boracay</p>
+              </div>
+              <span class="date-badge">Oct 2017 – May 2018</span>
+            </div>
+            <p class="role-desc">
+              Facilitated high-stakes gaming tables for VIP international guests, maintained strict regulatory adherence, and provided exceptional gaming hospitality within a luxury resort environment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience 5 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Reservation Associate</h3>
+                <h4 class="company-name">Club Haven Group of Hotels</h4>
+                <p class="company-loc">Paseo De Magallanes, Makati City</p>
+              </div>
+              <span class="date-badge">Apr 2016 – May 2017</span>
+            </div>
+            <p class="role-desc">
+              Oversewed hotel reservation pipelines, updated daily room rates and availability across distribution channels, and provided prompt customer support via phone and email.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience 6 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">APEC Media Relation Officer</h3>
+                <h4 class="company-name">Media Operations Committee – APEC Philippines</h4>
+                <p class="company-loc">Boracay Ecovillage & Convention Center</p>
+              </div>
+              <span class="date-badge">May 2015</span>
+            </div>
+            <p class="role-desc">
+              Assisted international media representatives, managed press center credentials, and coordinated logistics during the Asia-Pacific Economic Cooperation summit in Boracay.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & SOFTWARE -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Expertise</span>
+        <h2 class="section-title">Systems & Core Competencies</h2>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- PMS Systems Card -->
+        <div class="skill-card">
+          <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Property Management Systems (PMS)</h3>
+          <p>Proficient in operating industry-leading PMS software to manage bookings, guest folio data, and room rates.</p>
+          <div class="tag-cloud">
+            <span class="tag tag-highlight">Comanche</span>
+            <span class="tag">Klouds Hotels</span>
+            <span class="tag">Xenia</span>
+            <span class="tag">Hotelogix</span>
+            <span class="tag">Monday.com</span>
+          </div>
+        </div>
+
+        <!-- Channel Managers -->
+        <div class="skill-card">
+          <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>Channel Managers & OTAs</h3>
+          <p>Experienced in synchronizing rates, occupancy, and distribution channels across online travel agencies.</p>
+          <div class="tag-cloud">
+            <span class="tag">Beds24</span>
+            <span class="tag">Jinisys</span>
+            <span class="tag">Agoda Partner</span>
+            <span class="tag">Booking.com Extranet</span>
+          </div>
+        </div>
+
+        <!-- Core Competencies -->
+        <div class="skill-card span-2">
+          <div class="card-icon"><i class="fa-solid fa-user-check"></i></div>
+          <h3>Professional Competencies</h3>
+          <div class="competencies-grid">
+            <div class="comp-item"><i class="fa-solid fa-check"></i> Front Office Operations</div>
+            <div class="comp-item"><i class="fa-solid fa-check"></i> Guest Relations & Communication</div>
+            <div class="comp-item"><i class="fa-solid fa-check"></i> Problem Solving & Crisis Control</div>
+            <div class="comp-item"><i class="fa-solid fa-check"></i> Computer Literacy & Tech Savvy</div>
+            <div class="comp-item"><i class="fa-solid fa-check"></i> Teamwork & Leadership</div>
+            <div class="comp-item"><i class="fa-solid fa-check"></i> Time & Yield Management</div>
+            <div class="comp-item"><i class="fa-solid fa-check"></i> Attention to Detail</div>
+            <div class="comp-item"><i class="fa-solid fa-check"></i> Basic First Aid & Responder</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERNSHIPS, EDUCATION & TRAININGS -->
+  <section class="section bg-alt" id="education">
+    <div class="container">
+      <div class="grid-2">
+        
+        <!-- Internships Column -->
+        <div>
+          <div class="section-header text-left">
+            <span class="section-tag">Practical Training</span>
+            <h2 class="section-title">Internships</h2>
+          </div>
+
+          <div class="card-list">
+            <div class="info-card">
+              <span class="card-date">Sep 2022 – Sep 2022</span>
+              <h3>Caregiver (Internship)</h3>
+              <h4>Greenbreeze Home Elderly</h4>
+              <p>Dasmariñas City, Cavite</p>
+            </div>
+
+            <div class="info-card">
+              <span class="card-date">Apr 2013 – May 2015</span>
+              <h3>Reservation Agent (Internship)</h3>
+              <h4>La Carmela De Boracay Resort Hotel</h4>
+              <p>Station 2, Boracay Island, Aklan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education & Certifications Column -->
+        <div>
+          <div class="section-header text-left">
+            <span class="section-tag">Academic Background</span>
+            <h2 class="section-title">Education & Trainings</h2>
+          </div>
+
+          <div class="card-list">
+            <div class="info-card border-accent">
+              <span class="card-date">May 2012 – Apr 2016</span>
+              <h3>Bachelor of Science in Travel Management</h3>
+              <h4>STI College – Kalibo</h4>
+            </div>
+
+            <div class="info-card">
+              <span class="card-date">May 2022 – Dec 2022</span>
+              <h3>Caregiving Course</h3>
+              <h4>Nightingale Caregiver & Advance Tech. School</h4>
+            </div>
+
+            <div class="info-card">
+              <h3>Key Certifications & Seminars</h3>
+              <ul class="cert-list">
+                <li><i class="fa-solid fa-award"></i> Cruise Ship Management (Dumaguit-Batan Ferries)</li>
+                <li><i class="fa-solid fa-shield-halved"></i> Standard First Aid Training for Professional Rescuer (Philippine Red Cross)</li>
+                <li><i class="fa-solid fa-comments"></i> Effective Guest Communication (UNWND Boutique Hotel)</li>
+                <li><i class="fa-solid fa-triangle-exclamation"></i> Emergency Preparedness Seminar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section class="section" id="references">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Endorsements</span>
+        <h2 class="section-title">Professional References</h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="ref-card">
+          <div class="ref-avatar"><i class="fa-solid fa-user-tie"></i></div>
+          <h3>Khier Taghoy</h3>
+          <p class="ref-title">F&B / Villa Supervisor</p>
+          <p class="ref-company">Araw Hospitality Group Inc. – Malay Properties</p>
+          <a href="tel:09626695872" class="ref-phone"><i class="fa-solid fa-phone"></i> 09626695872</a>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-avatar"><i class="fa-solid fa-user-tie"></i></div>
+          <h3>Nina Dina Marie Patac</h3>
+          <p class="ref-title">Front Office / Reservation Manager</p>
+          <p class="ref-company">Pontefino Hotel</p>
+          <a href="tel:09209431215" class="ref-phone"><i class="fa-solid fa-phone"></i> 09209431215</a>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-avatar"><i class="fa-solid fa-user-tie"></i></div>
+          <h3>Armando P. Agusto</h3>
+          <p class="ref-title">Former Visayas Cluster General Manager</p>
+          <p class="ref-company">Araw Hospitality Group Inc.</p>
+          <a href="tel:0920461532" class="ref-phone"><i class="fa-solid fa-phone"></i> 0920461532</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="section bg-alt" id="contact">
+    <div class="container max-width-md">
+      <div class="section-header">
+        <span class="section-tag">Connect</span>
+        <h2 class="section-title">Send a Message</h2>
+      </div>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been simulated.');">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Job Opportunity / Inquiry" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Glivee D. Macasarte. All rights reserved.</p>
+      <p class="footer-sub">Designed for Professional Hospitality Recruitment.</p>
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast">Text copied to clipboard!</div>
+
+  <script>
+    // Copy to clipboard helper
+    function copyToClipboard(text, message) {
+      navigator.clipboard.writeText(text).then(() => {
+        const toast = document.getElementById("toast");
+        toast.innerText = message || "Copied to clipboard!";
+        toast.classList.add("show");
+        setTimeout(() => toast.classList.remove("show"), 3000);
+      });
+    }
+
+    // Profile Image Preview Handler
+    function previewImage(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const img = document.getElementById('profileImage');
+          const placeholder = document.getElementById('avatarPlaceholder');
+          img.src = e.target.result;
+          img.classList.remove('hidden');
+          placeholder.classList.add('hidden');
+        }
+        reader.readAsDataURL(file);
+      }
+    }
+
+    // Sticky Navbar shadow on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 20) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile Navigation Toggle
+    document.getElementById('mobileToggle').addEventListener('click', () => {
+      document.getElementById('navMenu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
