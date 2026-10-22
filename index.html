@@ -38,21 +38,25 @@
       
       <!-- Profile Picture Container -->
       <div class="avatar-column">
-        <div class="avatar-wrapper" id="avatarWrapper">
-          <div class="avatar-frame">
-            <img src="uploads/Glive.jpg" alt="Glivee D. Macasarte" id="profileImage" class="profile-img hidden">
-            <div class="avatar-placeholder" id="avatarPlaceholder">
-              <i class="fa-regular fa-user avatar-icon"></i>
-              <span class="placeholder-text">GM</span>
-            </div>
-          </div>
-          <div class="avatar-badge" onclick="document.getElementById('imageUpload').click()" title="Click to upload photo">
-            <i class="fa-solid fa-camera"></i>
-          </div>
-          <input type="file" id="imageUpload" accept="image/*" class="hidden-input" onchange="previewImage(event)">
-        </div>
-        <p class="avatar-subtext">Click camera icon to upload photo</p>
+  <div class="avatar-wrapper" id="avatarWrapper">
+    <div class="avatar-frame">
+      <!-- Hardcoded Profile Picture with Auto-Fallback -->
+      <img src="uploads/Glive.jpg" alt="Glivee D. Macasarte" id="profileImage" class="profile-img" onerror="this.classList.add('hidden'); document.getElementById('avatarPlaceholder').classList.remove('hidden');">
+      
+      <!-- Fallback Placeholder (Hidden by default unless image fails) -->
+      <div class="avatar-placeholder hidden" id="avatarPlaceholder">
+        <i class="fa-regular fa-user avatar-icon"></i>
+        <span class="placeholder-text">GM</span>
       </div>
+    </div>
+    
+    <div class="avatar-badge" onclick="document.getElementById('imageUpload').click()" title="Click to upload photo">
+      <i class="fa-solid fa-camera"></i>
+    </div>
+    <input type="file" id="imageUpload" accept="image/*" class="hidden-input" onchange="previewImage(event)">
+  </div>
+  <p class="avatar-subtext">Click camera icon to change photo</p>
+</div>
 
       <!-- Main Info & Bio -->
       <div class="hero-content">
